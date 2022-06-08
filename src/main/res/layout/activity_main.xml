@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RadioButton
+            android:id="@+id/rb_main_chat"
+            style="@style/MainButtonStyle"
+            android:text="Chat"></RadioButton>
+        <RadioButton
+            android:id="@+id/rb_main_contact"
+            style="@style/MainButtonStyle"
+            android:text="Contacts"></RadioButton>
+        <RadioButton
+            android:id="@+id/rb_main_setting"
+            style="@style/MainButtonStyle"
+            android:text="Setting"></RadioButton>
+
+
+    </RadioGroup>
+
+</LinearLayout>
